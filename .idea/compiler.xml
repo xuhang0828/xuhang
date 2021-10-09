@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jt-manage" />
+        <module name="jt-web" />
+        <module name="jt-log" />
+        <module name="jtcommon" />
+        <module name="jt-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jt-log" target="1.8" />
+      <module name="jtlog" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jt-common" options="-parameters" />
+      <module name="jt-log" options="-parameters" />
+      <module name="jt-manage" options="-parameters" />
+      <module name="jt-web" options="-parameters" />
+      <module name="jtcommon" options="-parameters" />
+      <module name="jtlog" options="" />
+    </option>
+  </component>
+</project>
